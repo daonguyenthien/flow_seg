@@ -11,11 +11,10 @@ import torch
 from PIL import Image
 
 from raft import RAFT
-from utils import flow_viz, helpers
+from utils import flow_viz
 from utils.utils import InputPadder
 from torchvision.utils import save_image
 
-class_names_list, label_values = helpers.get_label_info(os.path.join("./", "class_dict.csv"))
 DEVICE = 'cuda'
 
 def load_image(imfile):
